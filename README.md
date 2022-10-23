@@ -1,6 +1,6 @@
 # Marquee-RecyclerView
 A custom `RecyclerView` that implements the marquee behavior
-![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/main/screenshots/preview.gif)
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/preview.gif)
 
 
 ## Installation

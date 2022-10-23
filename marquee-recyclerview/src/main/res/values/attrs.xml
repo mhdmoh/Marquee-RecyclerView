@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarqueeRecyclerView">
+        <attr name="main_background_color" format="reference|color" />
+        <attr name="marquee_background_color" format="reference|color" />
+        <attr name="marquee_style">
+            <flag name="default_style" value="0" />
+            <flag name="without_bottom_line" value="1" />
+        </attr>
+
+        <attr name="show_logo" format="boolean" />
+        <attr name="logo_src" format="reference|color" />
+        <attr name="logo_padding" format="dimension" />
+        <attr name="logo_paddingLeft" format="dimension" />
+        <attr name="logo_paddingRight" format="dimension" />
+        <attr name="logo_paddingTop" format="dimension" />
+        <attr name="logo_paddingBottom" format="dimension" />
+
+        <attr name="show_marquee_icons" format="boolean" />
+        <attr name="scroll_interval" format="integer" />
+        <attr name="scroll_amount" format="integer" />
+
+        <!--The space to the left and to the right.
+        The default value is 0.01.
+        The minimum value is 0.45. -->
+        <attr name="spacing_width" format="float" />
+
+        <attr name="show_divider" format="boolean" />
+        <attr name="divider_color" format="color" />
+        <attr name="divider_width" format="dimension" />
+        <attr name="divider_margin" format="dimension" />
+        <attr name="divider_marginLeft" format="dimension" />
+        <attr name="divider_marginRight" format="dimension" />
+        <attr name="divider_marginTop" format="dimension" />
+        <attr name="divider_marginBottom" format="dimension" />
+
+        <attr name="android:textColor" format="color" />
+        <attr name="android:fontFamily" format="reference" />
+        <attr name="android:textSize" format="dimension" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+
+        <attr name="text_padding" format="dimension" />
+        <attr name="text_paddingLeft" format="dimension" />
+        <attr name="text_paddingRight" format="dimension" />
+        <attr name="text_paddingTop" format="dimension" />
+        <attr name="text_paddingBottom" format="dimension" />
+
+        <attr name="text_margin" format="dimension" />
+        <attr name="text_marginLeft" format="dimension" />
+        <attr name="text_marginRight" format="dimension" />
+        <attr name="text_marginTop" format="dimension" />
+        <attr name="text_marginBottom" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -46,7 +46,7 @@ and then in your activity :
 ```
     items.add(new MarqueeItem("text", src));
 ```
-    * the src can be a resource id from your assets or a url
+PS : the src can be a resource id from your assets or a url
 
 - add the list to your MarqueeRecyclerView
 ```
@@ -85,6 +85,7 @@ You can choose from two styles ```[default_style , without_bottom_line]``` by us
 * example for the `without_bottom_line` :
 
 ![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/without_bottom_line.jpg)
+
 
 you can also hide the logo image by using the attribute `show_logo` :
 ```

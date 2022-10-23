@@ -1,8 +1,7 @@
 # Marquee-RecyclerView
 A custom `RecyclerView` that implements the marquee behavior
-<p align="center">
-  <img src="https://github.com/mhdmoh/Marquee-RecyclerView/main/screenshots/preview.gif?raw=true" alt="Sublime's custom image"/>
-</p>
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/main/screenshots/preview.gif)
+
 
 ## Installation
 1. first add this in your root build.gradle at the end of repositories:

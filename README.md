@@ -1,5 +1,7 @@
 # Marquee-RecyclerView
 A custom `RecyclerView` that implements the marquee behavior
+
+
 ![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/preview.gif)
 
 
@@ -24,7 +26,7 @@ dependencies {
 ## How to use
 add the view to your layout from the xml
 ```
-        <mhdmoh.marquee_recyclerview.MarqueeRecyclerView
+    <mhdmoh.marquee_recyclerview.MarqueeRecyclerView
         android:id="@+id/marquee_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
@@ -33,7 +35,25 @@ add the view to your layout from the xml
         app:spacing_width="0.12" />
 
 ```
-### Manipulating The Main Background:
+
+and then in your activity :
+- create a list of `MarqueeItem`
+```
+    List<MarqueeItem> items = new ArrayList<>();
+```
+
+- add your data to the list :
+```
+    items.add(new MarqueeItem("text", src));
+```
+    * the src can be a resource id from your assets or a url
+
+- add the list to your MarqueeRecyclerView
+```
+    marqueeRecyclerView.setMarqueeItems(items);
+```
+
+## Manipulating The Main Background:
 
 | Feature                         | Example                                                     |
 | :---                            |                                                        :--- |
@@ -44,7 +64,35 @@ add the view to your layout from the xml
 | set the logo left padding       | app:logo_paddingLeft="8dp"                                  |
 | set the logo right padding      | app:logo_paddingRight="8dp"                                 |
 | set the logo top padding        | app:logo_paddingTop="8dp"                                   |
-| set the logo bottom padding     | app:logo_paddingBottm="8dp"                                 |
+| set the logo bottom padding     | app:logo_paddingBottom="8dp"                                |
+| set the spacing width           | app:spacing_width="0.12"                                    |
+
+### Spacing Width :
+You can change the spacing at the left and right of the marquee by using the attribute `spacing_width`,
+you can set it's value between ```[0, 0.45]``` and it is mesured by the precentage of the width of the screen
+
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/spacing-example.jpg)
+
+### Styling :
+You can choose from two styles ```[default_style , without_bottom_line]``` by using the attribute `marquee_style`
+```
+    app:marquee_style="without_bottom_line|default_style"
+```
+* example for the `default_style` :
+
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/default_style.jpg)
+
+* example for the `without_bottom_line` :
+
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/without_bottom_line.jpg)
+
+you can also hide the logo image by using the attribute `show_logo` :
+```
+    app:show_logo="true"
+```
+![alt tag](https://github.com/mhdmoh/Marquee-RecyclerView/blob/main/screenshots/no_logo.jpg)
+
+
 
 <br/>
 
